@@ -43,6 +43,17 @@ app.get('/buscar', (req, res) => {
     res.render('index', { resultados });
 });
 
+
+/*
+app.get('/buscar/:ano', (req, res) => {
+    let ano = req.params.ano;
+
+    resultados = resultados.filter(livro => livro.ano === ano);
+
+    res.render('index', { resultados });
+});
+*/
+
 // Configuração do EJS como motor de visualização
 app.set('view engine', 'ejs');
 
